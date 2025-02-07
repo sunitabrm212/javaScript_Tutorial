@@ -386,3 +386,115 @@ world in the console*/
 // //or 
 // username = '@'+userName+userName.length;
 // console.log(username);
+
+//Arrays => collections of items. Arrays are mutable
+// let marks = [97, 82, 73, 45, 33];
+// console.log(marks);
+// console.log(marks.length);
+
+// let heros = ["ironman", "thor", "hulk", "spiderman"];
+// console.log(heros);
+// console.log(heros.length);
+
+//for loop
+// let heros = ["ironman", "thor", "hulk", "spiderman", "perman", "antman", "shaktiman"];
+// for (let i = 0; i < heros.length; i++){
+//     console.log(heros[i]);
+// }
+
+//for of
+// for (let el of heros){
+//     console.log(el);
+// }
+
+// let cities = ["ktm", "bkt", "lalitpur", "pokhara", "gorkha"];
+// for (let city of cities){
+//     console.log(city.toUpperCase());
+// }
+
+//Let's Pratice
+//QN1. Average marks
+// let marks = [85, 97, 44, 37, 76, 60];
+// let sum = 0;
+// for(let i = 0; i < marks.length; i++){
+//     sum += marks[i];
+// }
+// let average = sum/marks.length;
+// console.log(`Average marks is ${average}`);
+
+//QN2. For a given array with prices of 5 items -> [250, 645, 300, 900, 50]
+//All items have an offer of 10% off on them. Change the array to store final price after applying offer.
+// let price = [250, 645, 300, 900, 50]
+// for (let i = 0; i < price.length; i++){
+//     price[i] = price[i] - (0.1 * price[i]);
+//     console.log(`Value after discount is ${price[i]}`);
+// }
+
+//Arrays Method
+//push() => adds from the end array
+let fruits = ["apple", "banana", "orange", "litchi"]
+// fruits.push("papaya","mango");
+// console.log(fruits);
+
+//pop() => removes item from the end
+// delItem = fruits.pop();
+// console.log(fruits);
+// console.log("deleted ",delItem);
+
+//Converting array to String
+// console.log(fruits.toString());
+// console.log(fruits);
+
+// let marks = [10, 20, 30, 40];
+// console.log(marks.toString());
+
+//Concat()
+// let marvelHeros = ["ironman", "hulk", "spiderman"];
+// let dcHeros = ["superman", "batman"];
+// let indianHeros = ["shaktiman", "krish"];
+// let heroes = marvelHeros.concat(dcHeros, indianHeros);
+// console.log(heroes);
+
+//unshift / shift
+// let marvelHeros = ["ironman", "hulk", "spiderman"];
+// // marvelHeros.unshift("thor"); //adds at first index
+// marvelHeros.shift(); // del first index value 
+// console.log(marvelHeros);
+
+//Slice() : returns a piece of array
+// let marvelHeros = ["ironman", "hulk", "spiderman", "antman", "hanuman", "Dr.Strange"];
+// console.log(marvelHeros.slice(1,3)); //doesn't change in original array
+// console.log(marvelHeros);
+
+//Splice() : change original array(add, removeCount, replace)
+let arr = [1, 2,3, 4, 5, 6, 7];
+// arr.splice(2, 2, 101, 102);
+// console.log(arr);
+
+//Add Element
+// arr.splice(2, 0, 101);
+
+//Delete Element
+// arr.splice(3, 1);
+
+//Replace Element
+// arr.splice(3, 1, 101);
+
+//Let's Practice
+//QN. Create an array to store companies -> "Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"
+// let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+//Remove the first company from the array
+// companies.splice(0, 1);
+// console.log(companies);
+
+//Remove Uber & Add Ola in its place
+// companies.splice(2, 1, "Ola");
+// console.log(companies);
+
+//Add Amazon at the end
+// companies.push("Amazon");
+// console.log(companies);
+
+arr = [1,2,4,0]
+arr_copy = arr.slice();
+console.log(arr_copy);
